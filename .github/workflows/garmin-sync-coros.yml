@@ -2,8 +2,11 @@ name: garmin-sync-coros
 
 on:
   workflow_dispatch:
+  ##schedule:
+  ##  - cron: '0 1,8,21 * * ?'
   schedule:
-    - cron: '0 1,8,21 * * ?'
+    # UTC time
+    - cron: "0 0,1,2,12 * * *"
 env:
   GITHUB_NAME: qinjian1981
   GITHUB_EMAIL: qinjian1981@gmail.com
