@@ -6,7 +6,9 @@ on:
   ##  - cron: '0 1,8,21 * * ?'
   schedule:
     # UTC time
-    - cron: "0 0,1,2,12 * * *"
+    # - cron: "0 0,1,2,12 * * *"
+    - cron: "0 * * * *"
+
 env:
   GITHUB_NAME: qinjian1981
   GITHUB_EMAIL: qinjian1981@gmail.com
